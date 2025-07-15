@@ -1,0 +1,59 @@
+.details-container {
+    height: 100vh; /* ocupa exatamente a altura da tela */
+    box-sizing: border-box; /* inclui padding na altura total */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: #A69581;
+    overflow: hidden; /* evita rolagem da página */
+}
+
+.movie-details {
+    display: flex;
+    gap: 2rem;
+    max-width: 800px;
+    align-items: flex-start; /* imagem e info alinhadas no topo */
+}
+
+.movie-details img {
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #f2e0d048;
+}
+
+.movie-details .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Sinopse com tamanho fixo e barra de rolagem */
+.sinopse {
+    height: 200px;
+    overflow-y: auto;
+    padding-right: 0.5rem; /* espaçamento pra barra de rolagem não grudar no texto */
+}
+
+.info button {
+    width: 150px;
+    height: 30px;
+    font-size: 1em;
+    background-color: #A69581;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    color: #202026;
+    cursor: pointer;
+}
+
+.info button:hover {
+    background-color: #F2E0D0;
+    box-shadow: 0 0 10px #a69581cc;
+}
+
+@media (max-width: 660px) {
+    .movie-details img {
+        height: 200px;
+    }
+}
