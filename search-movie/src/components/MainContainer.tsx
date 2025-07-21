@@ -1,23 +1,23 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react"
+import { Link } from "react-router-dom"
 
 interface MainContainerProps {
-  setFunc: (name: string) => void;
-  data: Movie[] | null;
+  setFunc: (name: string) => void
+  data: Movie[] | null
 }
 
 interface Movie {
-  id: number;
-  title: string;
-  poster_path: string | null;
-  release_date: string;
-  popularity: number
-  vote_average: number;
+  id: number,
+  title: string,
+  poster_path: string | null,
+  release_date: string,
+  popularity: number,
+  vote_average: number
 }
 
 function MainContainer({ setFunc, data }: MainContainerProps) {
-  const [name, setName] = useState("");
-  const [clicked, setClicked] = useState(false);
+  const [name, setName] = useState("")
+  const [clicked, setClicked] = useState(false)
 
   return (
     <>
@@ -32,8 +32,8 @@ function MainContainer({ setFunc, data }: MainContainerProps) {
           />
           <button
             onClick={() => {
-              setFunc(name);
-              setClicked(true);
+              setFunc(name)
+              setClicked(true)
             }}
           >
             Pesquisar
@@ -74,4 +74,4 @@ function MainContainer({ setFunc, data }: MainContainerProps) {
   );
 }
 
-export default MainContainer;
+export default MainContainer

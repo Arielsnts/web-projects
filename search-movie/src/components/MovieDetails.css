@@ -1,19 +1,19 @@
 .details-container {
-    height: 100vh; /* ocupa exatamente a altura da tela */
-    box-sizing: border-box; /* inclui padding na altura total */
+    height: 100vh;
+    box-sizing: border-box; 
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     color: #A69581;
-    overflow: hidden; /* evita rolagem da página */
+    overflow: hidden; 
 }
 
 .movie-details {
     display: flex;
     gap: 2rem;
     max-width: 800px;
-    align-items: flex-start; /* imagem e info alinhadas no topo */
+    align-items: flex-start; 
 }
 
 .movie-details img {
@@ -28,11 +28,10 @@
     gap: 1rem;
 }
 
-/* Sinopse com tamanho fixo e barra de rolagem */
 .sinopse {
     height: 200px;
     overflow-y: auto;
-    padding-right: 0.5rem; /* espaçamento pra barra de rolagem não grudar no texto */
+    padding-right: 0.5rem; 
 }
 
 .info button {

@@ -7,7 +7,7 @@ Repositório com meus projetos de desenvolvimento web.
 ## Desenvolvedor
 
 **Ariel Santos**  
-**Email:** [arielsant520@gmail.com](mailto:arielsant520@gmail.com)
+**Email:** [arielsant520@gmail.com]
 
 ---
 
