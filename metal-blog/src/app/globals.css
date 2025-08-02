@@ -1,0 +1,112 @@
+/*
+    preto: #0D0D0D
+    vermelho 1: #730202
+    vermelho 2: #A60303
+    vermelho 3: #D93030
+    vermelho 4: #D93644
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0D0D0D;
+    color: white;
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 700;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-shrink: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    height: 100px;
+    background-color: #730202;
+    font-size: 1.2rem;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #D93644;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    flex-shrink: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #730202;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 930px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  .principal {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
