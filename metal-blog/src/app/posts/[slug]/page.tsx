@@ -1,17 +1,22 @@
-import { alta, recentes } from '../../../data/posts'
-import styles from './page.module.css'
+import { alta, recentes } from '../../../data/posts';
+import styles from './page.module.css';
+import { Metadata } from 'next';
 
-interface PostPageProps {
+type Props = {
   params: {
     slug: string;
   };
+};
+
+export async function generateStaticParams() {
+  const allPosts = alta.concat(recentes);
+  return allPosts.map((post) => ({ slug: post.slug }));
 }
 
-export default async function Page({ params }: PostPageProps) {
-  const slug = params.slug;
-
+export default async function Page({ params }: Props) {
+  const { slug } = params;
   const allPosts = alta.concat(recentes);
-  const post = allPosts.find(post => post.slug === slug);
+  const post = allPosts.find((p) => p.slug === slug);
 
   return (
     <div className={styles.principal}>
@@ -21,8 +26,6 @@ export default async function Page({ params }: PostPageProps) {
       <p>{post?.album} - {post?.date}</p>
       <div className={styles.text}>
         <p>{post?.content}</p>
-        <h2>Titulo</h2>
-        <p>...</p>
         <a href="/" className={styles.voltar}>VOLTAR</a>
       </div>
     </div>
