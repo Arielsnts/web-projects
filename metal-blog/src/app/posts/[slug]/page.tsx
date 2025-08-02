@@ -1,9 +1,15 @@
 import { alta, recentes } from '../../../data/posts';
 import styles from './page.module.css';
+import { Metadata } from 'next';
 
-export default function Page({ params }: { params: { slug: string } }) {
+interface PageProps {
+    params: {
+        slug: string;
+    };
+}
+
+export default async function Page({ params }: PageProps) {
     const slug = params.slug;
-
     const allPosts = alta.concat(recentes);
     const post = allPosts.find(post => post.slug === slug);
 
@@ -28,10 +34,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 }
 
 
-
-export async function generateStaticParams() {
-  const allPosts = alta.concat(recentes);
-  return allPosts.map((post) => ({
-    slug: post.slug,
-  }));
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+    const allPosts = alta.concat(recentes);
+    return allPosts.map(post => ({ slug: post.slug }));
 }
