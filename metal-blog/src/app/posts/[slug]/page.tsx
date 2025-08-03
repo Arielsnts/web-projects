@@ -1,9 +1,15 @@
-import { alta, recentes } from '../../../data/posts';
-import styles from './page.module.css';
-import { Metadata } from 'next';
+import { alta, recentes } from '../../../data/posts'
+import styles from './page.module.css'
 
-export default async function Page({ params }: { params: { slug: string } }) {
+interface PostPageProps {
+    params: {
+        slug: string;
+    }
+}
+
+export default function PostPage({ params }: PostPageProps) {
     const slug = params.slug;
+
     const allPosts = alta.concat(recentes);
     const post = allPosts.find(post => post.slug === slug);
 
@@ -24,11 +30,5 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 <a href="/" className={styles.voltar}>VOLTAR</a>
             </div>
         </div>
-    );
-}
-
-
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
-    const allPosts = alta.concat(recentes);
-    return allPosts.map(post => ({ slug: post.slug }));
+    )
 }
