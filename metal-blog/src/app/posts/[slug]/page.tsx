@@ -2,13 +2,7 @@ import { alta, recentes } from '../../../data/posts';
 import styles from './page.module.css';
 import { Metadata } from 'next';
 
-interface PageProps {
-    params: {
-        slug: string;
-    };
-}
-
-export default async function Page({ params }: PageProps) {
+export default async function Page({ params }: { params: { slug: string } }) {
     const slug = params.slug;
     const allPosts = alta.concat(recentes);
     const post = allPosts.find(post => post.slug === slug);
