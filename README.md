@@ -21,7 +21,7 @@ Aplicativo para pesquisar uma cidade e exibir informações sobre o clima em tem
 Ferramenta para buscar filmes pelo nome e visualizar detalhes completos.
 **React + Typescript**
 
-### [Metal Blog](https://github.com/Arielsnts/web-projects/tree/main/metal-blog)
+### [Metal Blog](https://metal-blog.vercel.app/)
 Blog temático com foco em álbuns de metal, criado para fins didáticos e prática com rotas dinâmicas.  
 **Next.js + TypeScript**
 

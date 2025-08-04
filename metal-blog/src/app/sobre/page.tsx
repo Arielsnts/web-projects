@@ -14,7 +14,7 @@ export default function Sobre() {
                 <li>Uma página Sobre</li>
                 <li>Uma página de Contato</li>
             </ul>
-            <a href="" className={styles.codigo}>Clique para acessar o código</a>
+            <a href="https://github.com/Arielsnts/web-projects/tree/main/metal-blog" className={styles.codigo}>Clique para acessar o código</a>
         </div>
     )
 }
