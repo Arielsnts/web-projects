@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.containerPosts}>
         <h1>EM ALTA</h1>
         {alta.map(post => (
-          <Link href={`/posts/${post.slug}`} key={post.slug} className={styles.postContent}>
+          <Link href={`/`} key={post.slug} className={styles.postContent}>
             <img src={post.coverImage} alt="cover" style={{ width: '130px', height: '130px' }} />
             <div className={styles.text}>
               <h2>{post.title}</h2>
@@ -18,7 +18,7 @@ export default function Home() {
         ))}
         <h1>RECENTES</h1>
         {recentes.map(post => (
-          <Link href={`/posts/${post.slug}`} key={post.slug} className={styles.postContent}>
+          <Link href={`/`} key={post.slug} className={styles.postContent}>
             <img src={post.coverImage} alt="cover" style={{ width: '130px', height: '130px' }} />
             <div className={styles.text}>
               <h2>{post.title}</h2>
