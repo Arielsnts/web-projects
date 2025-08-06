@@ -25,4 +25,8 @@ Ferramenta para buscar filmes pelo nome e visualizar detalhes completos.
 Blog temático com foco em álbuns de metal, criado para fins didáticos e prática com rotas dinâmicas.  
 **Next.js + TypeScript**
 
+### [Entertainment Quiz](https://entertainment-quiz.vercel.app/)
+Quiz sobre entretenimento em inglês, com perguntas aleatórias de filmes, música, livros, videogames, entre outros.
+**Next.js + TypeScript + Tailwind CSS**
+
 ---
