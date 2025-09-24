@@ -28,6 +28,8 @@ function Cadastro() {
                 body: JSON.stringify({ nome, email, senha })
             })
 
+            const data = response.json()
+
             if (!response.ok) { 
                 if (response.status === 400) {
                     setErro("Esse email já foi cadastrado")
@@ -35,6 +37,7 @@ function Cadastro() {
                 }
                 else {
                     setErro("Erro interno. Tente novamente mais tarde")
+                    console.log(data)
                     return
                 }
             }

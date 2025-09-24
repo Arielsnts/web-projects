@@ -22,6 +22,8 @@ function Login() {
                 body: JSON.stringify({ email, senha })
             })
 
+            const data = response.json()
+
             if (!response.ok) {
                 if (response.status === 401) {
                     setErro("Email ou senha incorretos")
@@ -29,6 +31,8 @@ function Login() {
                 }
                 else {
                     setErro("Erro interno. Tente novamente mais tarde")
+                    console.log(data)
+                    return
                 }
             }
 
