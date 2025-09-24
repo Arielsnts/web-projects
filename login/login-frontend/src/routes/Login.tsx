@@ -15,7 +15,7 @@ function Login() {
                 return
             }
 
-            const response = await fetch("http://localhost:3000/api/login", {
+            const response = await fetch("https://login-vijy.onrender.com/api/login", {
                 credentials: "include",
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
