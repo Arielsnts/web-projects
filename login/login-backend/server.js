@@ -17,7 +17,7 @@ app.use(express.json())
 app.use(cookieParser())
 
 app.use(cors({
-    origin: "https://login-nine-kappa.vercel.app/",
+    origin: "https://login-nine-kappa.vercel.app",
     credentials: true
 }))
 
