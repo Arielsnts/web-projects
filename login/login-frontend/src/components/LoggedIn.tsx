@@ -14,7 +14,7 @@ function LoggedIn({ loginData }: LoggedProp) {
 
   const handleClick = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/logout", {
+      const response = await fetch("https://login-vijy.onrender.com/api/logout", {
         credentials: "include",
         method: "POST",
         headers: { "Content-Type": "application/json" },
