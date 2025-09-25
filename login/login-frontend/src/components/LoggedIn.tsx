@@ -28,7 +28,7 @@ function LoggedIn({ loginData }: LoggedProp) {
       }
 
       console.log(data)
-      window.location.reload()
+      // window.location.reload()
     }
     catch (err) {
       console.log("Erro: ", err)
