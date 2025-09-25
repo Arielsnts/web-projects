@@ -7,7 +7,7 @@ Repositório com meus projetos de desenvolvimento web.
 ## Desenvolvedor
 
 **Ariel Santos**  
-**Email:** arielsant520@gmil.com
+**Email:** arielsant520@gmail.com
 
 ---
 
@@ -29,7 +29,7 @@ Blog temático com foco em álbuns de metal, criado para fins didáticos e prát
 Quiz sobre entretenimento em inglês, com perguntas aleatórias de filmes, música, livros, videogames, entre outros.
 **Next.js + TypeScript + Tailwind CSS**
 
-### [Login] (https://login-nine-kappa.vercel.app/) 
+### [Login](https://login-nine-kappa.vercel.app/) 
 Sistema simples de autenticação com cadastro, login e logout usando cookies e JWT.
 **React + TypeScript + Node.js (Express) + MongoDB**
 
