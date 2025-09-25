@@ -23,7 +23,12 @@ router.get("/api/user/me", autenticar, async (req, res) => {
 })
 
 router.post("/api/logout", (req, res) => {
-    res.clearCookie("token")
+    res.clearCookie("token", {
+            httpOnly: true,
+            secure: true,
+            sameSite: "none",
+            partitioned: true
+        })
     res.status(200).json({ msg: "Logout feito com sucesso" })
 })
 
