@@ -29,7 +29,8 @@ router.post("/api/login", async (req, res) => {
             httpOnly: true,
             secure: true,
             sameSite: "none",
-            maxAge: 60000 * 60
+            maxAge: 60000 * 60,
+            partitioned: true
         })
 
         res.status(200).json({
