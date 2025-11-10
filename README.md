@@ -31,6 +31,10 @@ Quiz sobre entretenimento em inglês, com perguntas aleatórias de filmes, músi
 
 ### [Login](https://login-nine-kappa.vercel.app/) 
 Sistema simples de autenticação com cadastro, login e logout usando cookies e JWT.
-**React + TypeScript + Node.js (Express) + MongoDB**
+**React + TypeScript & Node.js (Express) + MongoDB**
+
+### [HotelEase](https://hotel-ease-sigma.vercel.app/)
+Sistema de reserva em hotéis por email. [Código](https://github.com/Arielsnts/hotel-ease)
+**Next.js + TypesScrypt + Tailwind CSS & Node.js (Express) + PostGreSQL**
 
 ---
