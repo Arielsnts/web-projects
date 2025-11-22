@@ -1,40 +1,42 @@
-# Web Projects
+# Web Projects - Ariel Santos
 
-Repositório com meus projetos de desenvolvimento web.
-
----
-
-## Desenvolvedor
-
-**Ariel Santos**  
-**Email:** arielsant520@gmail.com
+Repositório que reúne alguns dos meus projetos web desenvolvidos para estudo e prática como **desenvolvedor full stack**.
 
 ---
 
 ## Projetos
 
-### [Weather Report](https://weather-report-one-zeta.vercel.app/)
-Aplicativo para pesquisar uma cidade e exibir informações sobre o clima em tempo real.
-**React**
-
-### [Search Movie](https://search-movie-ashy-eight.vercel.app/)
-Ferramenta para buscar filmes pelo nome e visualizar detalhes completos.
-**React + Typescript**
-
-### [Metal Blog](https://metal-blog.vercel.app/)
-Blog temático com foco em álbuns de metal, criado para fins didáticos e prática com rotas dinâmicas.  
-**Next.js + TypeScript**
-
-### [Entertainment Quiz](https://entertainment-quiz.vercel.app/)
-Quiz sobre entretenimento em inglês, com perguntas aleatórias de filmes, música, livros, videogames, entre outros.
-**Next.js + TypeScript + Tailwind CSS**
-
-### [Login](https://login-nine-kappa.vercel.app/) 
-Sistema simples de autenticação com cadastro, login e logout usando cookies e JWT.
-**React + TypeScript & Node.js (Express) + MongoDB**
-
-### [HotelEase](https://hotel-ease-sigma.vercel.app/)
-Sistema de reserva em hotéis por email. [Código](https://github.com/Arielsnts/hotel-ease)
-**Next.js + TypesScrypt + Tailwind CSS & Node.js (Express) + PostGreSQL**
+### **Portfólio Pessoal**  
+🔗 https://portifolio-puce-nine-15.vercel.app/
+Meu site pessoal apresentando habilidades e projetos como desenvolvedor full stack.
+**Front-end:** Next.js + TypeScript
+**Back-end:** Express + PostgreSQL + Prisma
 
 ---
+
+### **HotelEase**  
+🔗 https://hotel-ease-sigma.vercel.app/  
+Sistema de reserva de hospedagens via email, permitindo cadastro e visualização de reservas.  
+**Front-end:** Next.js + TypeScript + Tailwind CSS  
+**Back-end:** Express + PostgreSQL + Prisma
+
+---
+
+### **Entertainment Quiz**  
+🔗 https://entertainment-quiz.vercel.app/  
+Quiz sobre entretenimento (filmes, música, livros, jogos, etc) com perguntas aleatórias em inglês.  
+**Tecnologias:** Next.js + TypeScript + Tailwind CSS
+
+---
+
+### **Search Movie**  
+🔗 https://search-movie-ashy-eight.vercel.app/  
+Ferramenta para buscar filmes pelo nome, exibindo detalhes como sinopse, nota e imagem de capa.  
+**Tecnologias:** React + TypeScript
+
+---
+
+### **Weather Report**  
+🔗 https://weather-report-one-zeta.vercel.app/  
+Aplicação para pesquisa de cidades e exibição de clima em tempo real.  
+**Tecnologias:** React
