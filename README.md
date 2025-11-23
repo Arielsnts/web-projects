@@ -15,7 +15,7 @@ Meu site pessoal apresentando habilidades e projetos como desenvolvedor full sta
 ---
 
 ### **HotelEase**  
-🔗 https://hotel-ease-sigma.vercel.app/<br>
+🔗 https://hotel-ease-ruddy.vercel.app/<br>
 Sistema de reserva de hospedagens via email, permitindo cadastro e visualização de reservas.<br>
 **Front-end:** Next.js + TypeScript + Tailwind CSS<br>
 **Back-end:** Express + PostgreSQL + Prisma<br>
